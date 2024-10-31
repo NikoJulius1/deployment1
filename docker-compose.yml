@@ -1,0 +1,27 @@
+services:
+  api-gateway:
+    build:
+      context: ./apigateway
+      dockerfile: Dockerfile.gateway
+    ports:
+      - "5000:5000"
+    depends_on:
+      - booking-service
+      - billing-service
+      - cleaning-service
+
+  booking-service:
+    build: ./HotelArthur
+    ports:
+      - "5001:5001"
+
+  billing-service:
+    build: ./Regning
+    ports:
+      - "5002:5002"
+
+  cleaning-service:
+    build: ./cleaningteam
+    ports:
+      - "5003:5003"
+
