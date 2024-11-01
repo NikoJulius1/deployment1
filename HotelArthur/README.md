@@ -3,9 +3,9 @@
 
 Denne Booking API er en Flask-baseret applikation til administration af hotelværelsesbookinger. Den gør det muligt for brugere at oprette, liste og eksportere bookinger samt integrere med en faktureringsservice til håndtering af tilknyttede omkostninger. API’en tjekker også tilgængelighed på værelser, inden en booking bekræftes, for at undgå overlap i reservationer.
 
-Funktioner
+**Funktioner**
 Liste over Bookinger: Hent en liste over alle bookinger i JSON-format.
-Opret Booking: Tilføj en ny booking, hvis værelset er tilgængeligt, og send detaljer til faktureringsservicen.
+Opret Bookin: Tilføj en ny booking, hvis værelset er tilgængeligt, og send detaljer til faktureringsservicen.
 Tjek Tilgængelighed: Bekræfter værelsets tilgængelighed ud fra bookingdatoer.
 Eksporter Bookinger i CSV: Eksporter alle bookingsdata i CSV-format til ekstern behandling.
 Endpoints
@@ -40,7 +40,7 @@ Databaseforbindelse
 Funktion: get_db_connection()
 Formål: Styrer forbindelsen til SQLite-databasen reservation_database.db, som gemmer bookingsdata.
 
-Notifikation til Faktureringsservice
+# Notifikation til Faktureringsservice
 Funktion: notify_billing_service(booking_id, room_type, checkin, checkout)
 Formål: Sender en POST-forespørgsel til en ekstern faktureringsservice (http://billing-service:5002/bills/update/{booking_id}) for at opdatere faktureringen i forbindelse med en ny booking.
 Data der Sendes: room_type, checkin, og checkout
