@@ -3,11 +3,11 @@ Dette repo viser alt kode, der er blevet i projektet.
 
 
 Udover er der links til hvert enkelt repo til alle microservies:
-APIGATEWAY 
-Link: 
+APIGATEWAY: 
+https://github.com/AndreascmBuch/API-Gateway
 
 Booking: 
-Link: 
+https://github.com/AndreascmBuch/Booking
 
 Billing: 
 https://github.com/AndreascmBuch/Hotel-Arthur---bill
