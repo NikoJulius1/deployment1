@@ -12,7 +12,7 @@ https://github.com/AndreascmBuch/Hotel-Arthur---bill
 
 Cleaningteam 
 https://github.com/NikoJulius1/HotelArthur-Reng-ring
-Desværre virker ikke denne service ikke. Her 
+ 
 
 ## For at starte microservices, og docker 
 Kør docker-compose up i GIT BASH terminalen 
