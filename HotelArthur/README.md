@@ -15,16 +15,8 @@ Respons: Returnerer en JSON-array med bookingoplysninger.
 
 2. POST /bookings
 Beskrivelse: Opretter en ny booking, hvis det ønskede værelse er tilgængeligt.
-Request Body:
-json
-Kopier kode
-{
-    "roomnumber": 101,
-    "category": "Standard single room",
-    "checkin": "2024-11-01T14:00:00",
-    "checkout": "2024-11-05T12:00:00"
-}
-Respons:
+
+Respons sat op til dette:
 201 Created hvis bookingen blev oprettet.
 409 Conflict hvis værelset ikke er tilgængeligt.
 400 Bad Request hvis nødvendige felter mangler.
