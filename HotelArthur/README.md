@@ -24,9 +24,9 @@ Beskrivelse: Opretter en ny booking, hvis værelset er tilgængeligt.
 
 **Responskoder:**
 
-201 Created: Booking blev oprettet.
-409 Conflict: Værelset er ikke tilgængeligt.
-400 Bad Request: Mangler nødvendige felter.
+- 201 Created: Booking blev oprettet.
+- 409 Conflict: Værelset er ikke tilgængeligt.
+- 400 Bad Request: Mangler nødvendige felter.
 Integration med Faktureringsservice: Ved en succesfuld booking sendes en notifikation til faktureringsservicen med bookingdetaljer som room_type, checkin, og checkout.
 
 3. GET /bookings/export/csv
